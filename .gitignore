@@ -1,0 +1,18 @@
+# Dependencias de Node.js (se regeneran con npm install) node_modules/
+
+## Secretos y variables de entorno locales
+.env
+.env.*
+!.env.example
+
+# Archivos del sistemna operativo (macOS)
+.DS_Store
+
+# Configuracion del editor
+.vscode/
+.idea/
+
+# Registros 
+*.log
+npm-debug.log*
+
