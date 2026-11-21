@@ -57,3 +57,56 @@ Consideraciones conocidas:
 | Integración continua | GitHub Actions y Jenkinsfile | 7 |
 | Base de datos | SQL Server (instancia local) | 8 |
 | Documentación | Markdown | Todas |
+
+## 6. Arquitectura del repositorio
+
+```text
+qa-automation-portfolio/
+├── README.md                  Portada del proyecto
+├── docs/                      Documentación general
+├── requirements/              Requerimientos, historias y trazabilidad
+├── manual-testing/            Pruebas manuales
+│   ├── casos-de-prueba/
+│   ├── pruebas-exploratorias/
+│   └── ejecucion/
+├── defects/                   Un archivo por defecto (DEF-NNN)
+├── api-testing/               Pruebas de API
+│   ├── postman/
+│   │   ├── collections/
+│   │   └── environments/
+│   └── test-data/
+├── automation/                Scripts, datos y reportes de automatización
+│   ├── scripts/
+│   ├── data/
+│   └── reports/
+├── sql/                       Validación con SQL
+│   ├── schema/
+│   ├── seed-data/
+│   └── validations/
+├── ci/                        Configuración de integración continua
+└── evidence/                  Capturas y resultados de ejecución
+    ├── screenshots/
+    └── execution-results/
+```
+
+Se incorporarán durante el desarrollo `.github/workflows/` (GitHub Actions) y `package.json` (dependencias de Node.js).
+
+## 7. Flujo de trabajo
+
+- La rama `main` contiene siempre la versión estable del repositorio.
+- Cada cambio se desarrolla en una rama con el formato `tipo/descripcion`, por ejemplo `docs/estructura-detallada`.
+- Los mensajes de commit siguen el formato `tipo: descripción`, con los tipos `chore`, `docs`, `feat` y `test`.
+- Los cambios se integran en `main` mediante Pull Request, usando un commit de fusión para conservar los commits individuales.
+
+## 8. Criterios de finalización
+
+El proyecto se considera terminado cuando:
+
+1. Otra persona puede clonar el repositorio y ejecutar las pruebas siguiendo el README, sin asistencia adicional.
+2. Cada caso manual tiene pasos reproducibles, datos de prueba y resultado esperado verificable, y está enlazado a un requerimiento en la matriz de trazabilidad.
+3. La automatización valida reglas de negocio y no solo códigos HTTP, con casos positivos, negativos y de límites.
+4. Existe al menos una ejecución real de Newman con reporte y una ejecución en GitHub Actions visible en el repositorio.
+5. No hay credenciales, tokens ni datos reales en los archivos ni en el historial.
+6. Los commits tienen mensajes claros y el historial refleja el trabajo realizado.
+7. Las limitaciones conocidas están declaradas.
+8. Todo resultado publicado proviene de una ejecución real.
