@@ -17,6 +17,8 @@ En construcción. Este repositorio se desarrolla por fases y se actualiza de for
 ## Documentación
 
 - [Alcance y arquitectura](docs/00-alcance-y-arquitectura.md): finalidad, alcance, tecnologías y estructura del repositorio.
+- [Convenciones](docs/01-convenciones.md): identificadores, nombres de archivos, idioma y organización.
+- [Configuración del entorno](docs/02-configuracion-del-entorno.md): requisitos y configuración inicial.
 
 ## Estructura del repositorio
 
