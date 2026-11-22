@@ -1,6 +1,6 @@
 # QA Automation Portfolio
 
-Portafolio profesional de QA manual y QA Automastizacion de Jessica Villena 
+Portafolio profesional de QA manual y QA Automatizacion de Jessica Villena 
 
 ## Objetivo
 
@@ -8,15 +8,17 @@ Demostrar el ciclo completo de aseguramiento de calidad: analisis de requerimien
 
 ## Sistema bajo prueba 
 
-Restful-Booker: API publica de reservas con datos ficticios 
+Restful-Booker: API pública de reservas con datos ficticios 
 
 ## Estado del proyecto
 
-En construccion. Este repositorio se desarrolla por fases y se actualiza de forma continua 
+En construcción. Este repositorio se desarrolla por fases y se actualiza de forma continua 
 
 ## Documentación
 
 - [Alcance y arquitectura](docs/00-alcance-y-arquitectura.md): finalidad, alcance, tecnologías y estructura del repositorio.
+- [Convenciones](docs/01-convenciones.md): identificadores, nombres de archivos, idioma y organización.
+- [Configuración del entorno](docs/02-configuracion-del-entorno.md): requisitos y configuración inicial.
 
 ## Estructura del repositorio
 
