@@ -4,7 +4,7 @@ Portafolio profesional de QA manual y QA Automatización de Jessica Villena
 
 ## Objetivo
 
-Demostrar el ciclo completo de aseguramiento de calidad: analisis de requerimientos, diseno y ejecucion de pruebas manuales, gestion de defectos, pruebas de API, automatizacion con Postman y Newman, ejecuacion automatizada y validacion de datos con SQL
+Demostrar el ciclo completo de aseguramiento de calidad: análisis de requerimientos, diseño y ejecución de pruebas manuales, gestión de defectos, pruebas de API, automatización con Postman y Newman, ejecución automatizada y validación de datos con SQL
 
 ## Sistema bajo prueba 
 
