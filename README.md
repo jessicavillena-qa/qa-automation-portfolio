@@ -1,6 +1,6 @@
 # QA Automation Portfolio
 
-Portafolio profesional de QA manual y QA Automatizacion de Jessica Villena 
+Portafolio profesional de QA manual y QA Automatización de Jessica Villena 
 
 ## Objetivo
 
