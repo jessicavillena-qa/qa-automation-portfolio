@@ -30,8 +30,9 @@ Las expectativas de entradas inválidas, credenciales incorrectas o recursos ine
 | RF-013 | Si las credenciales de autenticación son incorrectas, el sistema no debe entregar un token válido. El código HTTP esperado queda por verificar. | `POST /auth` | Convención; por verificar | Media |
 | RF-014 | Si una operación protegida se envía sin autenticación o con autenticación inválida, el sistema debe rechazarla. El código HTTP esperado queda por verificar. | `PUT`, `PATCH`, `DELETE /booking/:id` | Convención; por verificar | Alta |
 | RF-015 | Si se consulta un ID inexistente, el sistema no debe devolver una reserva como si existiera y debe informar el error. El código HTTP esperado queda por verificar. | `GET /booking/:id` | Convención; por verificar | Media |
-| RF-016 | Si la solicitud de creación o actualización contiene datos inválidos o requeridos ausentes, el sistema debe rechazarla y no guardar una reserva parcialmente inválida. El código HTTP esperado queda por verificar. | `POST`, `PUT`, `PATCH /booking` | Convención; por verificar | Alta |
-| RF-017 | Si se intenta actualizar o eliminar un ID inexistente, el sistema debe informar que el recurso no existe y no crear ni modificar otra reserva. El código HTTP esperado queda por verificar. | `PUT`, `PATCH`, `DELETE /booking/:id` | Convención; por verificar | Media |
+| RF-016 | 	Si una solicitud de creación contiene datos requeridos ausentes o inválidos, el sistema debe rechazarla y no crear la reserva. El código HTTP y la respuesta exacta quedan por verificar. | `POST /booking` | Convención; por verificar | Alta |
+| RF-017 | Si se intenta actualizar o eliminar un ID inexistente, el sistema debe informar que el recurso no existe y no crear ni modificar otra reserva. El código HTTP esperado queda por verificar. | `PUT /booking/{id}`, `PATCH /booking/{id}`, `DELETE /booking/{id}` | Convención; por verificar | Media |
+| RF-018 | 	Si una solicitud de actualización contiene datos inválidos, el sistema debe rechazarla sin aplicar cambios parciales. El código HTTP y la respuesta exacta quedan por verificar. En PATCH, los campos no enviados se conservan sin cambios. | `PUT /booking/{id}`, `PATCH /booking/{id}` | Convención; por verificar | Alta |
 
 ## 3. Comportamientos no documentados
 
